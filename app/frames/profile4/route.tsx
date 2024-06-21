@@ -12,11 +12,11 @@ export const POST = frames(
       const lensClient = new LensClient({ environment: production });
 
       const profile = await lensClient.profile.fetch({
-        forProfileId: "0x05",
+        forProfileId: ctx.message?.profileId,
       });
 
       const revenueArray = await lensClient.revenue.fromPublications({
-        for: "0x05",
+        for: ctx.message?.profileId,
       });
 
       // Initialize objects to store aggregated revenue
