@@ -115,8 +115,8 @@ export const POST = frames(async (ctx) => {
         <Button target={"/profile3"} action="post">
           Refetch 🔃
         </Button>,
-        <Button target={"https://dune.com/lens/lens-protocol"} action="link">
-          Explore More Lens Data
+        <Button target={"/profile4"} action="post">
+          Next ➡️
         </Button>,
       ],
     };
