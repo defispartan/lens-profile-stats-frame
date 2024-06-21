@@ -37,36 +37,4 @@ export const frames = createFrames({
       },
     }),
   ],
-  imageRenderingOptions: async () => {
-    const newmonoFont = fs.readFile(
-      path.join(path.resolve(process.cwd(), "public/fonts"), "newmono.ttf")
-    );
-    const firaScriptFont = fs.readFile(
-      path.join(
-        path.resolve(process.cwd(), "public"),
-        "FiraCodeiScript-Regular.ttf"
-      )
-    );
-
-    const [newmonoFontData, firaScriptFontData] = await Promise.all([
-      newmonoFont,
-      firaScriptFont,
-    ]);
-    return {
-      imageOptions: {
-        fonts: [
-          {
-            name: "NewMono",
-            data: newmonoFontData,
-            weight: 400,
-          },
-          {
-            name: "Fira Code",
-            data: firaScriptFontData,
-            weight: 700,
-          },
-        ],
-      },
-    };
-  },
 });

@@ -92,15 +92,15 @@ export const POST = frames(async (ctx) => {
               ></path>
             </svg>
           </div>
-          <div tw="text-7xl pb-10">{profile.handle.localName}</div>
+          <div tw="text-7xl pb-10">{profile?.handle?.localName}</div>
 
           <div tw="text-54xl pb-5">
-            {`Profile Created: ${formatDate(profile.createdAt)}`}
+            {`Profile Created: ${formatDate(profile?.createdAt || "")}`}
           </div>
-          <div tw="text-4xl pb-5">{`${daysAgo(profile.createdAt)}`}</div>
+          <div tw="text-4xl pb-5">{`${daysAgo(profile?.createdAt || "")}`}</div>
           <div tw="text-4xl pb-5">
             {`${profileLifecyclePercentage(
-              profile.createdAt
+              profile?.createdAt || ""
             )} of Lens' history`}
           </div>
         </div>

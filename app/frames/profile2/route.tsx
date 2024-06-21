@@ -31,10 +31,10 @@ export const POST = frames(async (ctx) => {
               ></path>
             </svg>
           </div>
-          <div tw="text-7xl pb-10">{profile.handle.localName}</div>
+          <div tw="text-7xl pb-10">{profile?.handle?.localName}</div>
 
           <div tw="text-4xl pb-5">
-            {`P(Q) Score: ${profile.stats.lensClassifierScore}`}
+            {`P(Q) Score: ${profile?.stats?.lensClassifierScore}`}
           </div>
           <div tw="text-2xl text-center pr-5 pl-5">
             P(Q) represents the Profile Quality Score, a comprehensive metric
