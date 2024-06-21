@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  // without a title, warpcast won't validate your frame
-  title: "frames.js starter",
-  description: "...",
+  title: "Lens Profile Stats Frame",
+  description: "Frame to view stas for connected Lens Profile",
 };
 
 export default function RootLayout({

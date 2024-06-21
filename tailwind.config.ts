@@ -28,6 +28,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        newmono: ['"NewMono"', "monospace"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

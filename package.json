@@ -1,5 +1,5 @@
 {
-  "name": "demo-multi-frame",
+  "name": "lens-stats-frame",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -13,7 +13,6 @@
   "dependencies": {
     "@lens-protocol/client": "^2.0.0",
     "@vercel/kv": "^1.0.1",
-    "@xmtp/frames-validator": "^0.6.1",
     "clsx": "^2.1.0",
     "frames.js": "^0.16.4",
     "next": "^14.1.4",

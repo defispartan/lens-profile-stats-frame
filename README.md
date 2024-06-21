@@ -1,6 +1,6 @@
-# Demo Multi Frame
+# Lens Stats Frame
 
-This is a boilerplate Frame supporting Farcaster, Lens, and XMTP, built with `frames.js`
+Display stats associated with a Lens Profile. Built with `frames.js`.
 
 ## Quickstart
 
@@ -16,6 +16,7 @@ This is a boilerplate Frame supporting Farcaster, Lens, and XMTP, built with `fr
 
 ## Docs, Questions and Help
 
+- [Lens Frames Spec](https://github.com/defispartan/lens-frames)
 - [Frames.js Documentation](https://framesjs.org)
 - [Awesome frames](https://github.com/davidfurlong/awesome-frames?tab=readme-ov-file)
 
